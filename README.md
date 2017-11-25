@@ -1,6 +1,6 @@
 # angular-nested-list
-This peoject is built using Angular 4. It features a nested list which is recursively (read: dynamically) built based on the list data that has been passed to the list component.  
-Sample data model for a list item is as follows
+This project is built using Angular 4. It serves as an example of recursion, in angular components. 
+It features a nested list interface which is recursively (read: dynamically) built based on the *recursive list data* that has been passed to the list component. Sample data model for a list item is as follows
 ```
 class ListDataItem  {
   id: string;
@@ -10,6 +10,7 @@ class ListDataItem  {
 }
 
 ```
+The `listDataItem` component, denoting a row of the list, is re-used (recursively) to generate the nested list with its children items, GrandChildren Items etc as required. (depending on the depth of the recursive list data). `<app-list-item>` is the component which has been used recursively. Pay attention to how the data has been passed to the nested component in the HTML using Angular's component arguments. Hopefully this serves as a sample for understanding nesting of components using Angular.
 
 ## Pre-requisites
 Since this is an Angular project, you need to have **node** and **AngularCli** (or likewise to allow angular commands)
