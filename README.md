@@ -12,6 +12,11 @@ class ListDataItem  {
 ```
 The `listDataItem` component, denoting a row of the list, is re-used (recursively) to generate the nested list with its children items, GrandChildren Items etc as required. (depending on the depth of the recursive list data). `<app-list-item>` is the component which has been used recursively. Pay attention to how the data has been passed to the nested component in the HTML using Angular's component arguments. Hopefully this serves as a sample for understanding nesting of components using Angular.
 
+##### Extra features:
+1. **Live Search:** allows searching of the list-data. (currently only for the top-most level of nesting)
+2. **Selected item count:** The counter at the bottom of the page keeps a count of the number of list-items that have been checked. (currently only for the top-most level of nesting)
+3. The selected items can then be **exported** as a filtered list.
+
 ## Pre-requisites
 Since this is an Angular project, you need to have **node** and **AngularCli** (or likewise to allow angular commands)
 #### Node
