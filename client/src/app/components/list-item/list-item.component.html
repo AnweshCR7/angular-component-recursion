@@ -1,0 +1,18 @@
+<div class="{{parentid ? 'collapse' : ''}}" id="{{parentid ? 'item-'+ parentid : ''}}" *ngIf="data.length">
+  <div *ngFor="let datum of data | filter: searchText">
+    <div *ngIf="datum === -1">No results found</div>
+    <div *ngIf="datum !== -1">
+      <ul style="list-style: none; margin-bottom:0px;padding-left:0px;">
+        <li class="list-group-item">
+            <input id="checkbox-{{datum.id}}" type="checkbox" [ngModel]="datum.isSelected" (change)="onCheckboxChange($event,datum)"  />
+            <label class="custom-checkbox-label" for="checkbox-{{datum.id}}"></label>
+            <a  href="#item-{{datum.id }}"  data-toggle="collapse" style="width:50px;" class="clickable">
+            {{datum.caption}} <i *ngIf="datum.subItems" class="glyphicon glyphicon-chevron-right "></i>
+            </a>
+        </li>
+      </ul>  
+      <app-list-item class="list-group"  *ngIf="datum.subItems" [key]="subItems" [data]="datum.subItems" [parentid]="datum.id"></app-list-item>
+    </div>
+  </div>
+</div>
+ 

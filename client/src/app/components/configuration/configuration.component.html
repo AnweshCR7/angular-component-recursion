@@ -1,0 +1,8 @@
+<div class="row config-margin">
+  <div class="lg-col-12 md-col-12 sm-col-12">
+    <select class="form-control" id="choice" (change) = "onSelectChanged($event)"  >
+        <option value="" selected disabled hidden>Select Database </option>
+      <option *ngFor="let choice of dbchoices" [value]="choice">{{choice.value}}</option>
+    </select>
+  </div>
+</div>
