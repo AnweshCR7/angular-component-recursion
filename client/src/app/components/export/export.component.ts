@@ -30,8 +30,7 @@ export class ExportComponent implements OnInit {
           this.num = true;
         else 
           this.num = false;
-
-      console.log(this.num)}
+      }
     )
   }
 }

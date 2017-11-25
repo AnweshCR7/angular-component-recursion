@@ -4,7 +4,6 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
 import { AppComponent } from './app.component';
 import { HeaderComponent } from './components/header/header.component';
-import { ConfigurationComponent } from './components/configuration/configuration.component';
 import { ExportComponent } from './components/export/export.component';
 import { GitIntegrationComponent } from './components/git-integration/git-integration.component';
 import { ListComponent } from './components/list/list.component';
@@ -22,7 +21,6 @@ import { DataService } from './services/data.service';
   declarations: [
     AppComponent,
     HeaderComponent,
-    ConfigurationComponent,
     ExportComponent,
     GitIntegrationComponent,
     ListComponent,
