@@ -21,7 +21,6 @@ export class ListComponent implements OnInit {
 
   
   selected;
-  arr1 = [{'id': 1, 'display_val': 'child-one', 'children': null}];
   data_array = [];
   choices = [];
   selectCount = 0;

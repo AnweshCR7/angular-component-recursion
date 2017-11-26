@@ -10,7 +10,7 @@ import { OnInit } from '@angular/core';
 })
 
 export class HeaderComponent implements OnInit {
-  title = "Content Generation Utility";
+  title = "Nested List using Recursion of Angular Components";
   data: any = {};
 
   constructor(private familyService: FamilyService) { 

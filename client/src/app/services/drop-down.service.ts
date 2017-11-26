@@ -5,7 +5,7 @@ export class DropDownService {
 
   constructor() { }
 
-  items = ['family', 'catalog', 'some real data'];
+  items = ['sample_1','sample_2','sample_3'];
 
   fetch_data() {
     return this.items;

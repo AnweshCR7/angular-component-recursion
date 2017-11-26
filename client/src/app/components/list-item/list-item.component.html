@@ -6,7 +6,7 @@
         <li class="list-group-item">
             <input id="checkbox-{{datum.id}}" type="checkbox" [ngModel]="datum.isSelected" (change)="onCheckboxChange($event,datum)"  />
             <label class="custom-checkbox-label" for="checkbox-{{datum.id}}"></label>
-            <a  href="#item-{{datum.id }}"  data-toggle="collapse" style="width:50px;" class="clickable">
+            <a  href="#item-{{datum.id}}"  data-toggle="collapse" style="width:50px;" class="clickable">
             {{datum.caption}} <i *ngIf="datum.subItems" class="glyphicon glyphicon-chevron-right "></i>
             </a>
         </li>
